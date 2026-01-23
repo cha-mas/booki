@@ -338,12 +338,12 @@ header nav a {
 
 .activites {
     border-radius: 20px;
-    padding: 30px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 30px;
+    margin: 30px 0;
+    padding: 0px;
 }
 
 .activites-cards {
@@ -358,6 +358,7 @@ header nav a {
 
 .activites-cards .card {
     border-radius: 20px;
+    padding: 0;
 
 }
 
@@ -381,10 +382,10 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    padding: 20px 50px;
 }
 
 footer section {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -450,6 +451,9 @@ footer ul {
         font-size: 13px;
     }
 
+    .activites {
+        padding: 0 30px;
+    }
 
 }
 
@@ -490,6 +494,10 @@ footer ul {
             border-bottom: 2px solid var(--main-color);
             color: var(--main-color);
         }
+
+        &:hover {
+            border-top: 0 !important;
+        }
     }
 
     .search-bar button {
@@ -519,7 +527,11 @@ footer ul {
     }
 
     .filter-item {
-        width: calc(50% - 20px);
+        padding: 0 15px;
+        width: calc(50% - 10px);
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .hebergements-and-populaires {
