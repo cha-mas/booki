@@ -17,7 +17,7 @@
 <body>
     <div class="main-container">
         <header>
-            <img src="./images/logo/Booki.png" alt="Logo de Booki" />
+            <img srcset="./images/logo/Booki.png, ./images/logo/Booki@3x.png x3" alt="Logo du site Booki" />
             <nav>
                 <a href="#hebergements">Hébergements</a>
                 <a href="#populaires">Activités</a>
@@ -29,12 +29,14 @@
                     <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-                <form class='search-bar'>
+                <form role="searchbox" class='search-bar'>
                     <span><i class="fa fa-location-dot"></i></span>
                     <input type="search" placeholder="Votre destination..." value="Marseille, France" required />
                     <button type="submit">
                         <span class="icon">
-                            <i class="fa fa-search"></i>
+                            <i class="fa fa-magnifying-glass">
+                                <span class="sr-only">Rechercher</span>
+                            </i>
                         </span>
                         <span>Rechercher</span>
                     </button>
@@ -68,7 +70,7 @@
                 </div>
             </section>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="hebergements" class="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
@@ -194,9 +196,9 @@
                             </article>
                         </a>
                     </div>
-                    <p class="afficher-plus-text">Afficher plus</p>
+                    <a href="#" class="afficher-plus-text">Afficher plus</a>
                 </section>
-                <section class="populaires">
+                <section id="populaires" class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
