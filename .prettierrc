@@ -1,0 +1,9 @@
+{
+    "useTabs": true,
+    "tabWidth": 4,
+    "bracketSameLine": true,
+    "htmlWhitespaceSensitivity": "strict",
+    "endOfLine": "lf",
+    "singleQuote": false,
+    "useVoidTags": true
+}
