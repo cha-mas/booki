@@ -32,11 +32,17 @@
             <section class="info-group">
                 <div>
                     <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-                    <h2>En plein centre-ville ou en pleine nature</h2>
+                    <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                 <form class="search-bar">
-                    <span><i class="fa fa-location-dot"></i></span>
-                    <input type="search" placeholder="Votre destination..." value="Marseille, France" required>
+                    <label for="search-input">
+                        <i class="fa fa-location-dot"></i>
+                        <span class="sr-only">
+                            Entrez votre destination
+                        </span>
+                    </label>
+                    <input id="search-input" type="search" placeholder="Votre destination..." value="Marseille, France"
+                        required>
                     <button type="submit">
                         <span class="icon">
                             <i class="fa fa-magnifying-glass">
